@@ -1,1 +1,1 @@
-# Music-School-Dashboard
+# MUSIC SCHOOL DASHBOARD
