@@ -1,0 +1,111 @@
+{
+    "enrollments" : [
+        {
+            "enrNo": "1234567",
+            "sName": "John Doe",
+            "cName": "Percussion",
+            "fees": "$120",
+            "enrDate": "12-08-2023"
+        },
+        {
+            "enrNo": "1234568",
+            "sName": "John Doe",
+            "cName": "Percussion",
+            "fees": "$120",
+            "enrDate": "12-08-2023"
+        },
+        {
+            "enrNo": "1234569",
+            "sName": "John Doe",
+            "cName": "Percussion",
+            "fees": "$120",
+            "enrDate": "12-08-2023"
+        },
+        {
+            "enrNo": "1234566",
+            "sName": "John Doe",
+            "cName": "Percussion",
+            "fees": "$120",
+            "enrDate": "12-08-2023"
+        },
+        {
+            "enrNo": "1234565",
+            "sName": "John Doe",
+            "cName": "Percussion",
+            "fees": "$120",
+            "enrDate": "12-08-2023"
+        },
+        {
+            "enrNo": "1234564",
+            "sName": "John Doe",
+            "cName": "Percussion",
+            "fees": "$120",
+            "enrDate": "12-08-2023"
+        },
+        {
+            "enrNo": "1234563",
+            "sName": "John Doe",
+            "cName": "Percussion",
+            "fees": "$120",
+            "enrDate": "12-08-2023"
+        }
+    ],
+    "students" : [
+        {
+            "regNo": "43422",
+            "fName": "John",
+            "lName": "Doe",
+            "course":"3",
+            "fees": "$120",
+            "regDate": "12-08-2023"
+        },
+        {
+            "regNo": "43423",
+            "fName": "John",
+            "lName": "Doe",
+            "course":"3",
+            "fees": "$120",
+            "regDate": "12-08-2023"
+        },
+        {
+            "regNo": "43424",
+            "fName": "John",
+            "lName": "Doe",
+            "course":"3",
+            "fees": "$120",
+            "regDate": "12-08-2023"
+        },
+        {
+            "regNo": "43425",
+            "fName": "John",
+            "lName": "Doe",
+            "course":"3",
+            "fees": "$120",
+            "regDate": "12-08-2023"
+        },
+        {
+            "regNo": "43426",
+            "fName": "John",
+            "lName": "Doe",
+            "course":"3",
+            "fees": "$120",
+            "regDate": "12-08-2023"
+        },
+        {
+            "regNo": "43427",
+            "fName": "John",
+            "lName": "Doe",
+            "course":"3",
+            "fees": "$120",
+            "regDate": "12-08-2023"
+        },
+        {
+            "regNo": "43428",
+            "fName": "John",
+            "lName": "Doe",
+            "course":"3",
+            "fees": "$120",
+            "regDate": "12-08-2023"
+        }
+    ]
+}
