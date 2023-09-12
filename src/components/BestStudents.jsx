@@ -54,59 +54,59 @@ const BestStudents = () => {
     };
 
     return (
-        <div className='px-7'>
-            <div style={{display:"flex", justifyContent:"space-between", marginBottom:"10px"}}>
-                <h1 className="text-gray-500 mt-2 text-xl" style={{ fontWeight: "normal", letterSpacing: "0.4px" }}>Best Students</h1>
-                <h1 className="mt-2 text-md text-pink-700" style={{ fontWeight: "normal" }} onClick={viewCourses}>View All Courses</h1>
-            </div>
-            <Table style={{fontSize: "14px", marginBottom:"32px"}}>
-                <TableHeader>
-                    <TableRow>
-                        <TableHead style={{textAlign:"left",fontWeight: "700"}}>Reg. No</TableHead>
-                        <TableHead style={{textAlign:"center",fontWeight: "700"}}>F. Name</TableHead>
-                        <TableHead style={{textAlign:"center",fontWeight: "700"}}>L. Name</TableHead>
-                        <TableHead style={{textAlign:"center",fontWeight: "700"}}>Course #</TableHead>
-                        <TableHead style={{textAlign:"center",fontWeight: "700"}}>Total Fees</TableHead>
-                        <TableHead style={{textAlign:"right",fontWeight: "700"}}>Reg. Date</TableHead>
-                    </TableRow>
-                </TableHeader>
-                <TableBody style={{fontWeight: "400"}}>
-                    {currentPageData.map((item) => (
-                        <TableRow key={item.regNo}>
-                            <TableCell style={{textAlign:"left",fontWeight: "400"}}>{item.regNo}</TableCell>
-                            <TableCell style={{textAlign:"center",fontWeight: "400"}}>{item.fName}</TableCell>
-                            <TableCell style={{textAlign:"center",fontWeight: "400"}}>{item.lName}</TableCell>
-                            <TableCell style={{textAlign:"center",fontWeight: "400"}}>{item.course}</TableCell>
-                            <TableCell style={{textAlign:"center",fontWeight: "400"}}>{item.fees}</TableCell>
-                            <TableCell style={{textAlign:"right",fontWeight: "400"}}>{item.regDate}</TableCell>
-                        </TableRow>
-                    ))}
-                </TableBody>
-            </Table>
-            <div className="flex justify-between" style={{width:"20%",marginLeft:"80%", marginBottom:"32px"}}>
-                <button
-                    className={`bg-pink-700 text-white px-2 rounded text-sm ${
-                        currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''
-                    }`}
-                    onClick={handlePreviousPage}
-                    disabled={currentPage === 1}
-                >
-                    Previous
-                </button>
-                <span className="text-gray-500 text-sm">
-                    Page {currentPage} of {totalPages}
-                </span>
-                <button
-                    className={`bg-pink-700 text-white px-2 text-sm rounded ${
-                        currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : ''
-                    }`}
-                    onClick={handleNextPage}
-                    disabled={currentPage === totalPages}
-                >
-                    Next
-                </button>
-            </div>
-        </div>
+        <div className="px-7">
+    <div className="flex justify-between mb-2">
+        <h1 className="text-gray-500 mt-4 text-xl font-normal leading-6 tracking-wide">Best Students</h1>
+        <h1 className="mt-2 text-md text-pink-700 font-normal cursor-pointer" onClick={viewCourses}>View All Courses</h1>
+    </div>
+    <Table className="text-sm mb-5">
+        <TableHeader>
+            <TableRow>
+                <TableHead className="text-left font-semibold">Reg. No</TableHead>
+                <TableHead className="text-center font-semibold">F. Name</TableHead>
+                <TableHead className="text-center font-semibold">L. Name</TableHead>
+                <TableHead className="text-center font-semibold">Course #</TableHead>
+                <TableHead className="text-center font-semibold">Total Fees</TableHead>
+                <TableHead className="text-right font-semibold">Reg. Date</TableHead>
+            </TableRow>
+        </TableHeader>
+        <TableBody className="font-normal">
+            {currentPageData.map((item) => (
+                <TableRow key={item.regNo}>
+                    <TableCell className="text-left">{item.regNo}</TableCell>
+                    <TableCell className="text-center">{item.fName}</TableCell>
+                    <TableCell className="text-center">{item.lName}</TableCell>
+                    <TableCell className="text-center">{item.course}</TableCell>
+                    <TableCell className="text-center">{item.fees}</TableCell>
+                    <TableCell className="text-right">{item.regDate}</TableCell>
+                </TableRow>
+            ))}
+        </TableBody>
+    </Table>
+    <div className="flex justify-between w-1/5 ml-auto mb-5">
+        <button
+            className={`bg-pink-700 text-white px-2 rounded text-sm ${
+                currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''
+            }`}
+            onClick={handlePreviousPage}
+            disabled={currentPage === 1}
+        >
+            Previous
+        </button>
+        <span className="text-gray-500 text-sm">
+            Page {currentPage} of {totalPages}
+        </span>
+        <button
+            className={`bg-pink-700 text-white px-2 text-sm rounded ${
+                currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : ''
+            }`}
+            onClick={handleNextPage}
+            disabled={currentPage === totalPages}
+        >
+            Next
+        </button>
+    </div>
+</div>
     )
 }
 
