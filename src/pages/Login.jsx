@@ -7,7 +7,7 @@ const Login = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
-    const { isAuth, loginUser} = useContext(AuthContext);
+    const { isAuth, loginUser } = useContext(AuthContext);
 
     const handleLogin = () => {
         if (username === "admin" && password === "Admin@123") {
@@ -20,16 +20,19 @@ const Login = () => {
     }
 
     return (
-        <div className={`p-3 my-5 h-custom`}>
+        <>
+            <h1 className="text-4xl font-bold text-center text-blue-600 mb-3">MUSIC SCHOOL</h1>
             <div className={`md:flex`}>
-                <img
-                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
-                    alt="Sample image"
-                    className={`img-fluid md:w-1/2`}
-                />
+                <div className='md:w-1/2 max-h-70vh overflow-hidden'>
+                    <img
+                        src="https://soulfulmusikacademy.com/assets/img/soul/about.png"
+                        alt="Sample image"
+                        className="img-fluid max-h-full"
+                    />
+                </div>
                 <div className={`md:w-1/2 px-3`}>
                     <div className={`p-3 my-5 md:w-1/2`}>
-                        <h1 className={`font-bold text-center mb-3`}>Login</h1>
+                        <h1 className={`font-bold text-center mb-3 text-blue-600 text-2xl`}>Login</h1>
                         <input
                             className={`mb-4 block w-full border border-gray-300 rounded-md py-2 px-3`}
                             type="text"
@@ -54,7 +57,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
