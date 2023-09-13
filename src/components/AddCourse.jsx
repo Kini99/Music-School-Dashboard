@@ -59,14 +59,16 @@ const AddCourse = ({ courseData, setCourseData }) => {
     return (
         <>
             <Popover>
-                <PopoverTrigger asChild>
+                    <div className="flex justify-end">
+                    <PopoverTrigger asChild>
                     <Button
                         variant="outline"
-                        className="bg-pink-200 ml-[87%] px-4 py-2 rounded-lg mb-10"
+                        className="bg-pink-200 px-4 py-2 rounded-lg mb-10 shadow-md"
                     >
                         <span className="text-2xl">+</span> Add Course
                     </Button>
-                </PopoverTrigger>
+                    </PopoverTrigger>
+                    </div>
                 <PopoverContent className="w-80 bg-white">
                     <div className="grid gap-4 py-4">
                         <div className="grid grid-cols-4 items-center gap-4">

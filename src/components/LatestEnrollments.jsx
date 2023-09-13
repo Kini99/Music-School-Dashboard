@@ -81,7 +81,8 @@ const LatestEnrollments = () => {
             ))}
         </TableBody>
     </Table>
-    <div className="flex justify-between w-1/5 ml-auto mb-10">
+    <div className="flex justify-end">
+    <div className="flex justify-between gap-2 ml-auto mb-10">
         <button
             className={`bg-pink-700 text-white px-2 rounded text-sm ${
                 currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''
@@ -105,7 +106,7 @@ const LatestEnrollments = () => {
         </button>
     </div>
 </div>
-
+</div>
     )
 }
 

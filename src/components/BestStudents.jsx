@@ -83,26 +83,28 @@ const BestStudents = () => {
                     ))}
                 </TableBody>
             </Table>
-            <div className="flex justify-between w-1/5 ml-auto mb-5">
-                <button
-                    className={`bg-pink-700 text-white px-2 rounded text-sm ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''
-                        }`}
-                    onClick={handlePreviousPage}
-                    disabled={currentPage === 1}
-                >
-                    Previous
-                </button>
-                <span className="text-gray-500 text-sm">
-                    Page {currentPage} of {totalPages}
-                </span>
-                <button
-                    className={`bg-pink-700 text-white px-2 text-sm rounded ${currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : ''
-                        }`}
-                    onClick={handleNextPage}
-                    disabled={currentPage === totalPages}
-                >
-                    Next
-                </button>
+            <div className="flex justify-end">
+                <div className="flex justify-between gap-2 ml-auto mb-5">
+                    <button
+                        className={`bg-pink-700 text-white px-2 rounded text-sm ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''
+                            }`}
+                        onClick={handlePreviousPage}
+                        disabled={currentPage === 1}
+                    >
+                        Previous
+                    </button>
+                    <span className="text-gray-500 text-sm">
+                        Page {currentPage} of {totalPages}
+                    </span>
+                    <button
+                        className={`bg-pink-700 text-white px-2 text-sm rounded ${currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : ''
+                            }`}
+                        onClick={handleNextPage}
+                        disabled={currentPage === totalPages}
+                    >
+                        Next
+                    </button>
+                </div>
             </div>
         </div>
     )

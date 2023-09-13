@@ -31,14 +31,16 @@ const CourseList = ({ courseData, setCourseData }) => {
     const [currentPage, setCurrentPage] = useState(1);
     const [searchQuery, setSearchQuery] = useState('');
     const [filteredData, setFilteredData] = useState(courseData);
-    const [editedCourse, setEditedCourse] = useState({name: "",
-    description: "",
-    instructor: "",
-    instrument: "",
-    day: "",
-    students: "",
-    price: "",
-    status: "Active"});
+    const [editedCourse, setEditedCourse] = useState({
+        name: "",
+        description: "",
+        instructor: "",
+        instrument: "",
+        day: "",
+        students: "",
+        price: "",
+        status: "Active"
+    });
 
     useEffect(() => {
         const fetchCourses = async () => {
@@ -134,14 +136,16 @@ const CourseList = ({ courseData, setCourseData }) => {
         updatedCourseData[courseIndex] = editedCourse;
         localStorage.setItem("courseData", JSON.stringify(updatedCourseData));
         setCourseData(updatedCourseData);
-        setEditedCourse({name: "",
-        description: "",
-        instructor: "",
-        instrument: "",
-        day: "",
-        students: "",
-        price: "",
-        status: "Active"});
+        setEditedCourse({
+            name: "",
+            description: "",
+            instructor: "",
+            instrument: "",
+            day: "",
+            students: "",
+            price: "",
+            status: "Active"
+        });
         alert("Course Updated Successfully!");
         window.location.reload();
     };
@@ -168,28 +172,28 @@ const CourseList = ({ courseData, setCourseData }) => {
             <Table className="text-sm mb-5 mt-5 bg-white">
                 <TableHeader>
                     <TableRow className="text-left font-semibold">
-                        <TableHead className="font-semibold">Name</TableHead>
-                        <TableHead className="font-semibold">Description</TableHead>
-                        <TableHead className="font-semibold">Instructor</TableHead>
-                        <TableHead className="font-semibold">Instrument</TableHead>
-                        <TableHead className="font-semibold">Day of Week</TableHead>
-                        <TableHead className="font-semibold"># of Students</TableHead>
-                        <TableHead className="font-semibold">Price</TableHead>
-                        <TableHead className="font-semibold">Status</TableHead>
-                        <TableHead className="text-center font-semibold">Actions</TableHead>
+                        <TableHead className="font-semibold p-2">Name</TableHead>
+                        <TableHead className="font-semibold p-2">Description</TableHead>
+                        <TableHead className="font-semibold p-2">Instructor</TableHead>
+                        <TableHead className="font-semibold p-2">Instrument</TableHead>
+                        <TableHead className="font-semibold p-2">Day of Week</TableHead>
+                        <TableHead className="font-semibold p-2"># of Students</TableHead>
+                        <TableHead className="font-semibold p-2">Price</TableHead>
+                        <TableHead className="font-semibold p-2">Status</TableHead>
+                        <TableHead className="text-center font-semibold p-2">Actions</TableHead>
                     </TableRow>
                 </TableHeader>
                 <TableBody className="font-normal">
                     {currentPageData.map((item) => (
                         <TableRow key={item.id}>
-                            <TableCell className="text-left">{item.name}</TableCell>
-                            <TableCell className="text-left">{item.description}</TableCell>
-                            <TableCell className="text-left">{item.instructor}</TableCell>
-                            <TableCell className="text-left">{item.instrument}</TableCell>
-                            <TableCell className="text-left">{item.day}</TableCell>
-                            <TableCell className="text-left">{item.students}</TableCell>
-                            <TableCell className="text-left">{item.price}</TableCell>
-                            <TableCell className="text-left">
+                            <TableCell className="text-left p-2 p-2">{item.name}</TableCell>
+                            <TableCell className="text-left p-2">{item.description}</TableCell>
+                            <TableCell className="text-left p-2">{item.instructor}</TableCell>
+                            <TableCell className="text-left p-2">{item.instrument}</TableCell>
+                            <TableCell className="text-left p-2">{item.day}</TableCell>
+                            <TableCell className="text-left p-2">{item.students}</TableCell>
+                            <TableCell className="text-left p-2">{item.price}</TableCell>
+                            <TableCell className="text-left p-2">
                                 {item.status === 'Active' && (
                                     <span className="bg-green-300 px-5 py-2 rounded-lg text-gray-500">
                                         {item.status}
@@ -359,26 +363,28 @@ const CourseList = ({ courseData, setCourseData }) => {
                     ))}
                 </TableBody>
             </Table>
-            <div className="flex justify-between w-1/5 ml-auto mb-10">
-                <button
-                    className={`bg-pink-700 text-white px-2 rounded text-sm ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''
-                        }`}
-                    onClick={handlePreviousPage}
-                    disabled={currentPage === 1}
-                >
-                    Previous
-                </button>
-                <span className="text-gray-500 text-sm">
-                    Page {currentPage} of {totalPages}
-                </span>
-                <button
-                    className={`bg-pink-700 text-white px-2 text-sm rounded ${currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : ''
-                        }`}
-                    onClick={handleNextPage}
-                    disabled={currentPage === totalPages}
-                >
-                    Next
-                </button>
+            <div className="flex justify-end">
+                <div className="flex justify-between gap-2 ml-auto mb-10">
+                    <button
+                        className={`bg-pink-700 text-white px-2 rounded text-sm ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''
+                            }`}
+                        onClick={handlePreviousPage}
+                        disabled={currentPage === 1}
+                    >
+                        Previous
+                    </button>
+                    <span className="text-gray-500 text-sm">
+                        Page {currentPage} of {totalPages}
+                    </span>
+                    <button
+                        className={`bg-pink-700 text-white px-2 text-sm rounded ${currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : ''
+                            }`}
+                        onClick={handleNextPage}
+                        disabled={currentPage === totalPages}
+                    >
+                        Next
+                    </button>
+                </div>
             </div>
         </>
     )
