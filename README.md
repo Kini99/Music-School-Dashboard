@@ -4,10 +4,13 @@ Music School Dashboard is a website created for updating, tracking and analyzing
 
 This website is built using the following tech stacks and tools:-
 -> React
+
 -> Vite
--> Redux
+
 -> Tailwind CSS
+
 -> Shadcn
+
 -> Axios
 
 ## Features
