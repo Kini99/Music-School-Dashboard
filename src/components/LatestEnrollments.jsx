@@ -59,7 +59,7 @@ const LatestEnrollments = () => {
         <h1 className="text-gray-500 mt-4 text-xl font-normal tracking-wide">Latest Enrollments</h1>
         <h1 className="mt-2 text-md text-pink-700 font-normal cursor-pointer" onClick={viewCourses}>View All Courses</h1>
     </div>
-    <Table className="text-sm mb-5">
+    <Table className="text-sm mb-5 bg-white">
         <TableHeader>
             <TableRow>
                 <TableHead className="text-left font-semibold">Enr. No</TableHead>

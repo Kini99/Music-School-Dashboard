@@ -107,5 +107,139 @@
             "fees": "$120",
             "regDate": "12-08-2023"
         }
+    ],
+    "courses":[
+        {
+            "id":1,
+            "name":"Classical Guitar",
+            "description":"Guitar Classes for beginners",
+            "instructor":"Ms. Jane Doe",
+            "instrument":"Guitar",
+            "day":"Wednesday",
+            "students":26,
+            "price":"$60",
+            "status":"Active"
+        },
+        {
+            "id":2,
+            "name":"Classical Sitar",
+            "description":"Sitar Classes for beginners",
+            "instructor":"Ms. Jane Doe",
+            "instrument":"Sitar",
+            "day":"Tuesday",
+            "students":15,
+            "price":"$60",
+            "status":"Closed"
+        },
+        {
+            "id":3,
+            "name":"Percussion",
+            "description":"Percussion Classes for beginners",
+            "instructor":"Ms. Jane Doe",
+            "instrument":"Percussion",
+            "day":"Thursday",
+            "students":30,
+            "price":"$120",
+            "status":"Active"
+        },
+        {
+            "id":4,
+            "name":"Flute",
+            "description":"Flute Classes for beginners",
+            "instructor":"Ms. Jane Doe",
+            "instrument":"Flute",
+            "day":"Monday",
+            "students":3,
+            "price":"$60",
+            "status":"Archived"
+        },
+        {
+            "id":5,
+            "name":"Classical Guitar",
+            "description":"Guitar Classes for beginners",
+            "instructor":"Ms. Jane Doe",
+            "instrument":"Guitar",
+            "day":"Wednesday",
+            "students":26,
+            "price":"$60",
+            "status":"Active"
+        },
+        {
+            "id":6,
+            "name":"Classical Sitar",
+            "description":"Sitar Classes for beginners",
+            "instructor":"Ms. Jane Doe",
+            "instrument":"Sitar",
+            "day":"Tuesday",
+            "students":15,
+            "price":"$60",
+            "status":"Closed"
+        },
+        {
+            "id":7,
+            "name":"Percussion",
+            "description":"Percussion Classes for beginners",
+            "instructor":"Ms. Jane Doe",
+            "instrument":"Percussion",
+            "day":"Thursday",
+            "students":30,
+            "price":"$120",
+            "status":"Active"
+        },
+        {
+            "id":8,
+            "name":"Flute",
+            "description":"Flute Classes for beginners",
+            "instructor":"Ms. Jane Doe",
+            "instrument":"Flute",
+            "day":"Monday",
+            "students":3,
+            "price":"$60",
+            "status":"Archived"
+        },
+        {
+            "id":9,
+            "name":"Classical Guitar",
+            "description":"Guitar Classes for beginners",
+            "instructor":"Ms. Jane Doe",
+            "instrument":"Guitar",
+            "day":"Wednesday",
+            "students":26,
+            "price":"$60",
+            "status":"Active"
+        },
+        {
+            "id":10,
+            "name":"Classical Sitar",
+            "description":"Sitar Classes for beginners",
+            "instructor":"Ms. Jane Doe",
+            "instrument":"Sitar",
+            "day":"Tuesday",
+            "students":15,
+            "price":"$60",
+            "status":"Closed"
+        },
+        {
+            "id":11,
+            "name":"Percussion",
+            "description":"Percussion Classes for beginners",
+            "instructor":"Ms. Jane Doe",
+            "instrument":"Percussion",
+            "day":"Thursday",
+            "students":30,
+            "price":"$120",
+            "status":"Active"
+        },
+        {
+            "id":12,
+            "name":"Flute",
+            "description":"Flute Classes for beginners",
+            "instructor":"Ms. Jane Doe",
+            "instrument":"Flute",
+            "day":"Monday",
+            "students":3,
+            "price":"$60",
+            "status":"Archived"
+        }
     ]
 }

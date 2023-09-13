@@ -1,4 +1,3 @@
-import React from 'react';
 import { Route, Routes } from 'react-router';
 import Overview from './Overview';
 import Login from './Login';
