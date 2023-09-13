@@ -7,10 +7,10 @@ import PrivateRoute from '../components/PrivateRoute';
 const MainRoutes = () => {
   return (
     <Routes>
-    <Route path ="/" element={<PrivateRoute><Overview/></PrivateRoute>} />
-    <Route path ="/login" element={<Login/>} />
-    <Route path ="/courses" element={<PrivateRoute><Course/></PrivateRoute>} />
-</Routes>
+      <Route path="/" element={<PrivateRoute><Overview /></PrivateRoute>} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/courses" element={<PrivateRoute><Course /></PrivateRoute>} />
+    </Routes>
   )
 }
 

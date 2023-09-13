@@ -3,16 +3,16 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContextProvider";
 
 function PrivateRoute(props) {
-    const {isAuth} = useContext(AuthContext);
+    const { isAuth } = useContext(AuthContext);
 
-    const navigate=useNavigate()
+    const navigate = useNavigate()
 
-    if(!isAuth){
+    if (!isAuth) {
         navigate("/login");
         return null;
     }
     return props.children;
-   
+
 }
 
 export default PrivateRoute;

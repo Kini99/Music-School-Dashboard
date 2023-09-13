@@ -186,7 +186,7 @@ const CourseList = ({ courseData, setCourseData }) => {
                 <TableBody className="font-normal">
                     {currentPageData.map((item) => (
                         <TableRow key={item.id}>
-                            <TableCell className="text-left p-2 p-2">{item.name}</TableCell>
+                            <TableCell className="text-left p-2">{item.name}</TableCell>
                             <TableCell className="text-left p-2">{item.description}</TableCell>
                             <TableCell className="text-left p-2">{item.instructor}</TableCell>
                             <TableCell className="text-left p-2">{item.instrument}</TableCell>
@@ -219,7 +219,7 @@ const CourseList = ({ courseData, setCourseData }) => {
                                                     <img src={actions1} alt="icon" className="h-full mx-auto" />
                                                 </div>
                                             </DropdownMenuTrigger>
-                                            <DropdownMenuContent className="w-[140px] bg-white">
+                                            <DropdownMenuContent className="w-[150px] bg-white">
                                                 <PopoverTrigger asChild><DropdownMenuItem className="text-lg hover:bg-gray-300 cursor-pointer" onClick={() => { handleAction("Edit", item.id) }}>
                                                     Edit Course
                                                 </DropdownMenuItem>

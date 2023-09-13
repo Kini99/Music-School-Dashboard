@@ -5,14 +5,14 @@ import BestStudents from '../components/BestStudents';
 
 const Overview = () => {
   return (
-      <div className="flex">
-        <Sidebar />
-        <div className="flex-1 overflow-y-auto">
-          <Header />
-          <LatestEnrollments />
-          <BestStudents/>
-        </div>
+    <div>
+      <Sidebar />
+      <div className="float-right w-[93vw]">
+        <Header />
+        <LatestEnrollments />
+        <BestStudents />
       </div>
+    </div>
   )
 }
 

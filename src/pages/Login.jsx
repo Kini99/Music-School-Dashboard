@@ -21,13 +21,13 @@ const Login = () => {
 
     return (
         <>
-            <h1 className="text-4xl font-bold text-center text-blue-600 mb-3">MUSIC SCHOOL</h1>
-            <div className={`md:flex`}>
-                <div className='md:w-1/2 max-h-70vh overflow-hidden'>
+            <h1 className="text-4xl font-bold text-center text-blue-600 mb-3 pt-3">MUSIC SCHOOL</h1>
+            <div className={`md:flex ml-40`}>
+                <div className='md:w-1/2 max-h-[90vh] overflow-hidden'>
                     <img
                         src="https://soulfulmusikacademy.com/assets/img/soul/about.png"
                         alt="Sample image"
-                        className="img-fluid max-h-full"
+                        className="img-fluid "
                     />
                 </div>
                 <div className={`md:w-1/2 px-3`}>

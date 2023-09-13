@@ -6,13 +6,13 @@ import { useState } from "react";
 const Course = () => {
   const [courseData, setCourseData] = useState([]);
   return (
-    <div className="flex">
+    <div>
       <Sidebar />
-      <div className="flex-1 overflow-y-auto">
+      <div className="flex-1 float-right w-[93vw]">
         <div className="px-7">
           <h1 className="text-gray-500 mt-2 text-3xl font-normal">Courses</h1>
-          <CourseList courseData={courseData} setCourseData={setCourseData}/>
-          <AddCourse courseData={courseData} setCourseData={setCourseData}/>
+          <CourseList courseData={courseData} setCourseData={setCourseData} />
+          <AddCourse courseData={courseData} setCourseData={setCourseData} />
         </div>
       </div>
     </div>
