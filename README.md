@@ -3,6 +3,7 @@
 Music School Dashboard is a website created for updating, tracking and analyzing data of a Music School by its Administrators.
 
 This website is built using the following tech stacks and tools:-
+
 -> React
 
 -> Vite
