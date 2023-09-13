@@ -1,5 +1,4 @@
 import { createContext, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 
 export const AuthContext = createContext();
@@ -7,7 +6,6 @@ export const AuthContext = createContext();
 function AuthContextProvider(props) {
 
     const [isAuth, setIsAuth] = useState(false);
-    const navigate = useNavigate();
 
     const loginUser = async () => {
         try {

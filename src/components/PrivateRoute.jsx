@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContextProvider";
 
 function PrivateRoute(props) {
-    const {isAuth, loginUser} = useContext(AuthContext);
+    const {isAuth} = useContext(AuthContext);
 
     const navigate=useNavigate()
 
@@ -11,7 +11,6 @@ function PrivateRoute(props) {
         navigate("/login");
         return null;
     }
-console.log(true)
     return props.children;
    
 }
